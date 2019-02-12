@@ -1,14 +1,3 @@
-/*
- *  Necessary function:
- *   -> bubble_sort_vector
- *          for sort vector
- *
- *   -> bubble_sort_array
- *          for sort array with known size
- */
-
-
-
 #include <iostream>
 #include <vector>
 
@@ -20,7 +9,6 @@ typedef unsigned long long ull;
 void bubble_sort_vector(vector<int> *array)
 {
     ull size = array->size();
-
     for(ull i = 0; i < size; i++)
         for(ull j = 0; j < size - 1 - i; j++)
         {
@@ -84,6 +72,6 @@ int main()
     print_vector(&vector1);
     bubble_sort_vector(&vector1);
     print_vector(&vector1);
-
+    
     return 0;
 }
